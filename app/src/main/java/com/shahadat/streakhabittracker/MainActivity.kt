@@ -8,6 +8,8 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import androidx.navigation.compose.rememberNavController
+import com.shahadat.streakhabittracker.ui.navigation.NavGraph
 import com.shahadat.streakhabittracker.ui.theme.AppColors
 import com.shahadat.streakhabittracker.ui.theme.StreakHabitTrackerTheme
 import dagger.hilt.android.AndroidEntryPoint
@@ -25,7 +27,8 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = AppColors.Background
                 ) {
-                    // Navigation host will be added in feature/home-screen branch
+                    val navController = rememberNavController()
+                    NavGraph(navController = navController)
                 }
             }
         }
