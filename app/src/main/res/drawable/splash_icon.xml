@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Background circle with gradient feel -->
+    <path
+        android:pathData="M54,54m-40,0a40,40 0,1 1,80 0a40,40 0,1 1,-80 0"
+        android:fillColor="#8B7CF6" />
+
+    <!-- Fire/streak icon -->
+    <path
+        android:pathData="M54,28C54,28 42,42 42,52C42,58.6 47.4,64 54,64C60.6,64 66,58.6 66,52C66,42 54,28 54,28ZM54,60C49.6,60 46,56.4 46,52C46,46 54,34 54,34C54,34 62,46 62,52C62,56.4 58.4,60 54,60Z"
+        android:fillColor="#FFFFFF" />
+
+    <!-- Inner flame -->
+    <path
+        android:pathData="M54,40C54,40 48,48 48,52C48,55.3 50.7,58 54,58C57.3,58 60,55.3 60,52C60,48 54,40 54,40Z"
+        android:fillColor="#34D399" />
+
+</vector>

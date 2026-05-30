@@ -1,0 +1,33 @@
+package com.shahadat.streakhabittracker
+
+import android.os.Bundle
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material3.Surface
+import androidx.compose.ui.Modifier
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import com.shahadat.streakhabittracker.ui.theme.AppColors
+import com.shahadat.streakhabittracker.ui.theme.StreakHabitTrackerTheme
+import dagger.hilt.android.AndroidEntryPoint
+
+@AndroidEntryPoint
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        installSplashScreen()
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+
+        setContent {
+            StreakHabitTrackerTheme {
+                Surface(
+                    modifier = Modifier.fillMaxSize(),
+                    color = AppColors.Background
+                ) {
+                    // Navigation host will be added in feature/home-screen branch
+                }
+            }
+        }
+    }
+}
